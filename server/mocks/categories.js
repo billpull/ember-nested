@@ -6,20 +6,24 @@ module.exports = function(app) {
       id: 1,
       name: 'Fruit',
       description: 'A bunch of fruit',
-      items: [1, 2, 3]
+      items: [1, 2, 3],
+      parent: 1,
+      isMandatory: true
     },
     2: {
       id: 2,
       name: 'Meat',
       description: 'A bunch of meat',
-      items: [4, 5, 6]
+      items: [4, 5, 6],
+      parent: 1
     },
     3: {
       id: 3,
       name: 'Apples',
       description: 'Some apples',
       items: [7, 8, 9],
-      parentItem: 1
+      parentItem: 1,
+      parent: 1
     }
   };
 

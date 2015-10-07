@@ -1,0 +1,5 @@
+<ul>
+{{#each model.parent.topLevelCategories as |category|}}
+	{{category-list category=category toggleItem=(action "toggleItem")}}
+{{/each}}
+</ul>

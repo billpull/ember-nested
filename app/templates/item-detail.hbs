@@ -1,0 +1,9 @@
+{{model.item.content.name}}
+
+<ul>
+	{{#each model.item.categories as |category|}}
+		{{category-list category=category toggleItem=(action "toggleItem")}}
+	{{/each}}
+</ul>
+
+<button {{action "unNest" model.item on="click"}}>Done</button>

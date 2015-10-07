@@ -1,0 +1,10 @@
+<li>
+	<strong>{{category.content.name}}</strong>
+	<ul>
+		{{#each category.items as |item|}}
+			<li {{action attrs.toggleItem category item on="click"}}>
+				{{item.content.name}} - {{#if item.isSelected}}<em>selected</em>{{/if}}
+			</li>
+		{{/each}}
+	</ul>
+</li>
